@@ -3,7 +3,7 @@
         <script>
             function toggle(){
                 let src = document.getElementById("image").src;
-                if(scr.match(/st.png/)){
+                if(src.match(/st.png/)){
                     document.getElementById("image").src="./ww.png";
                 }else{
                     document.getElementById("image").src="./st.png";
@@ -13,7 +13,8 @@
     </head>
     <body>
         <div style="background-color: white;height: 100px;">
-             <img id="image" src="./st.png"onclick="toggle()"style="position:absolute;left:0;width:100px;position: relative;"style=”transform: scale(1, -1); ”/>
+            <img id="image" src="./st.png" onclick="toggle()" style="position:absolute;left:0;width:100px;position: relative;"style="transform: scale(1, -1); "
+            ;>
              <img src="./cr.png"style="position:absolute;left:100;bottom:0;width:100px;position:relative;">
         </div>
         <div style="background-color: rgb(255, 197, 122);height: 100px;">
